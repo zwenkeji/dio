@@ -25,7 +25,7 @@ main() async {
   FormData formData2 = new FormData.from({
     "name": "wendux",
     "age": 25,
-    "file": new UploadFileInfo(new File("/Users/duwen/Downloads/YoudaoNote.dmg"), "YoudaoNote.dmg"),
+    // "file": new UploadFileInfo(new File("/Users/duwen/Downloads/YoudaoNote.dmg"), "YoudaoNote.dmg"),
   });
 
   //Response response = await dio.post("/token", data: formData);
