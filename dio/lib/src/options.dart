@@ -166,7 +166,7 @@ class BaseOptions extends _RequestConfig with OptionsMixin {
     );
   }
 
-  static const _allowPayloadMethods = ['POST', 'PUT', 'PATCH', 'DELETE'];
+  static const _allowPayloadMethods = ['POST', 'PUT', 'PATCH', 'DELETE', 'GET'];
 
   /// if false, content-type in request header will be deleted when method is not on of `_allowPayloadMethods`
   bool setRequestContentTypeWhenNoPayload;
