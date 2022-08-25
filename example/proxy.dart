@@ -13,8 +13,7 @@ void main() async {
       (HttpClient client) {
     client.findProxy = (uri) {
       //proxy all request to localhost:8888
-      //return 'PROXY localhost:8888';
-      return 'DIRECT';
+      return 'PROXY 192.168.0.102:8889';
     };
     client.badCertificateCallback =
         (X509Certificate cert, String host, int port) => true;
